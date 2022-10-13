@@ -2,20 +2,24 @@ import React, { useState, useEffect } from "react";
 import { Text, useNavigation, View, Image } from "react-xnft";
 import { useEffectAsync } from "./utils";
 
-export function Screen() {
+export function ScreenW2() {
   const nav = useNavigation();
   const [loading, setLoading] = useState(false);
   const [data, setData] = useState<any>([]);
 
   useEffectAsync(async () => {
-    setLoading(true);
+    setTimeout(() => {
+      setLoading(true);
+    }, 16);
     const response = await fetch(
       "https://assets.tiexo.com/xnft/metadata_v4.json"
     ).then((res) => res.json());
     console.log(response);
 
-    setData(response);
-    setLoading(false);
+    setTimeout(() => {
+      setData(response);
+      setLoading(false);
+    }, 16);
   }, []);
 
   return (
