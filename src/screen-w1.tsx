@@ -1,20 +1,28 @@
 import React, { useState, useEffect } from "react";
 import { Text, useNavigation, View, Image } from "react-xnft";
-import { useEffectAsync } from "./utils";
 
 export function ScreenW1() {
   const nav = useNavigation();
   const [loading, setLoading] = useState(true);
   const [data, setData] = useState<any>([]);
 
-  useEffectAsync(async () => {
-    const response = await fetch(
-      "https://assets.tiexo.com/xnft/metadata_v4.json"
-    ).then((res) => res.json());
-    console.log(response);
+  useEffect(() => {
+    let isSubscribed = true;
+    const fetchData = async () => {
+      const response = await fetch(
+        "https://assets.tiexo.com/xnft/metadata_v4.json"
+      ).then((res) => res.json());
+      console.log(response);
 
-    setData(response);
-    setLoading(false);
+      isSubscribed && setData(response);
+      isSubscribed && setLoading(false);
+    };
+
+    fetchData();
+
+    return () => {
+      isSubscribed = false;
+    };
   }, []);
 
   return (

@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from "react";
-import { Text, useNavigation, View, Image, Button } from "react-xnft";
-import { useEffectAsync } from "./utils";
+import React, { useState } from "react";
+import { Text, useNavigation, View } from "react-xnft";
 
 const buttonStyle: React.CSSProperties = {
   background: "white",
