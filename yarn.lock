@@ -58,10 +58,10 @@
     "@mui/styles" "^5.8.4"
     react "^17.0.0"
 
-"@coral-xyz/xnft-cli@^0.2.0-latest.68":
-  version "0.2.0-latest.68"
-  resolved "https://registry.yarnpkg.com/@coral-xyz/xnft-cli/-/xnft-cli-0.2.0-latest.68.tgz#4d47301eab2288a34d38e3abc6832a4decd0f3d2"
-  integrity sha512-daOA5FANH6qj6Xhfbgw7jfGkon7oy7TWxIMFc6CGGiFMeK/aRbvxBx1xeTTHAnC5b/iBo1X7TsrpGFRJ80eUhA==
+"@coral-xyz/xnft-cli@^0.2.0-latest.95":
+  version "0.2.0-latest.95"
+  resolved "https://registry.yarnpkg.com/@coral-xyz/xnft-cli/-/xnft-cli-0.2.0-latest.95.tgz#f7ef1dee3c0b161bb6d29c622ae89f25b893064c"
+  integrity sha512-bq625foMgln7MRDBzuT5If+6vqi/08ov52faRSzbF5uZpfRMfH/WxJmvH0eOCbP/KcygSz8OZH5Pg+QaX8C7kA==
   dependencies:
     "@parcel/config-default" "^2.7.0"
     "@parcel/core" "^2.7.0"
@@ -3087,10 +3087,10 @@ react-transition-group@^4.4.5:
     loose-envify "^1.4.0"
     prop-types "^15.6.2"
 
-react-xnft@^0.2.0-latest.68:
-  version "0.2.0-latest.68"
-  resolved "https://registry.yarnpkg.com/react-xnft/-/react-xnft-0.2.0-latest.68.tgz#8792dac1fc626ee80f1b85df7a3ad8ff038b2111"
-  integrity sha512-ezZ408Nj6J2C4cJhSkyGLmbbRvQrpD9rMVAe/Htw7aG8eY1+CCEsW9OvLXJHEnlJ05stoz2u5GPUAccZ8ncvYg==
+react-xnft@^0.2.0-latest.95:
+  version "0.2.0-latest.95"
+  resolved "https://registry.yarnpkg.com/react-xnft/-/react-xnft-0.2.0-latest.95.tgz#17195c8206a525ba459b52e1ed8b94329b6f4027"
+  integrity sha512-ypqf5F7n5MKkg48UnYQQzAwQcOTpE0mRmdm583HZscD/xbPmDAeRk4MgEiFSlEv8Bq9c/WpgsDeTpgfMZ3vWiQ==
   dependencies:
     "@coral-xyz/common-public" "*"
     "@coral-xyz/themes" "*"
